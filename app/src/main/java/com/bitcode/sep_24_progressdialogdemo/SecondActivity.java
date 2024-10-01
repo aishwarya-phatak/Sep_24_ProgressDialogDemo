@@ -45,7 +45,7 @@ public class SecondActivity extends AppCompatActivity {
 
             if (msg.getTarget().hasMessages(2)){
                 Integer [] progress = (Integer[]) msg.getTarget().obtainMessage().obj;
-                btnDownload.setText("progress " + progress[0]);
+                btnDownload.setText("progress " + progress);
             }
         }
     }
